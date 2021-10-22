@@ -2,6 +2,7 @@
     "m_Name": "Settings",
     "m_Path": "ProjectSettings/Packages/com.unity.probuilder/Settings.json",
     "m_Dictionary": {
+<<<<<<< Updated upstream
         "m_DictionaryValues": [
             {
 <<<<<<< HEAD
@@ -191,5 +192,8 @@
 >>>>>>> main
             }
         ]
+=======
+        "m_DictionaryValues": []
+>>>>>>> Stashed changes
     }
 }
