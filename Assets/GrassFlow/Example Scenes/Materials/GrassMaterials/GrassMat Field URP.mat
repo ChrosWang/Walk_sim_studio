@@ -80,7 +80,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Ints: []
     m_Floats:
     - Rendermode: 0
     - _ALPHA_TO_MASK: 0
@@ -138,7 +137,7 @@ Material:
     - variance: 0.3
     - widthLODscale: 0.04
     m_Colors:
-    - _Color: {r: 0.46547675, g: 0.6415094, b: 0.251157, a: 1}
+    - _Color: {r: 0, g: 0.15058304, b: 0.8773585, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _LOD: {r: 15, g: 1.1, b: 0, a: 0}
     - _noiseScale: {r: 1, g: 1, b: 0.7, a: 0}
