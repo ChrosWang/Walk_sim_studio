@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class GlowingHandler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public Material glow, nonglow;
+bool isGlowing = false;
 
-    // Update is called once per frame
-    void Update()
+public void ToggleGlow()
+{
+    if (isGlowing)
     {
-        
+        gameObject.GetComponent<MeshRenderer>().material = nonglow;
+        isGlowing = false;
+    } else {
+        gameObject.GetComponent<MeshRenderer>().material = glow;
+        isGlowing = true;
     }
+}
 }
