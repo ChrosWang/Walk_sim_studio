@@ -8,6 +8,6 @@ public class AnimationHandler : MonoBehaviour
 
     public void ToggleBool(string boolname)
     {
-        animator.SetBool(boolname, animator.GetBool(boolname));
+        animator.SetBool(boolname, !animator.GetBool(boolname));
     }
 }
