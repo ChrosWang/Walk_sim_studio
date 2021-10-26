@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class VolumeHandler : MonoBehaviour
 {
+    public AudioSource audioSource;
 /*    public static IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume)
    {
         float currentTime = 0;
@@ -22,10 +23,10 @@ public class VolumeHandler : MonoBehaviour
         StartCoroutine(FadeVolume.StartFade(audioSource, duration, targetVolume));
     }*/
 
-    public void FadeIn(AudioSource audioSource){
-         StartCoroutine(FadeVolume.StartFade(audioSource, 1.5f, 0.3f));
+    public void FadeInOut(float volume){
+         StartCoroutine(FadeVolume.StartFade(audioSource, 1.5f, volume));
     }
-
+    /*
     public void FadeOut(AudioSource audioSource){
          StartCoroutine(FadeVolume.StartFade(audioSource, 1.5f, 0.08f));
     }
@@ -33,4 +34,5 @@ public class VolumeHandler : MonoBehaviour
     public void FadeOutComplete(AudioSource audioSource){
          StartCoroutine(FadeVolume.StartFade(audioSource, 1.5f, 0));
     }
+    */
 }
