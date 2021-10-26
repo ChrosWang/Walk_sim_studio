@@ -9,17 +9,21 @@ public class trigger_this : MonoBehaviour
 
     public int timeEntered;
 
+    public GameObject target;
     public Transform warpPoint;
-    public GameObject firstPerson;
 
     void OnTriggerEnter()
     {
-        firstPerson.transform.position = warpPoint.transform.position; 
+        target.transform.position = warpPoint.transform.position; 
     }
 
+   public void Teleport()
+    {
+        target.transform.position = warpPoint.transform.position; 
+    }
     void OnTriggerExit ()
     {
-        print("I wish for death");
+        //print("I wish for death");
     }
 
     // Update is called once per frame
